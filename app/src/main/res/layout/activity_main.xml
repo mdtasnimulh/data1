@@ -549,7 +549,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/request_text_background"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
