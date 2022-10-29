@@ -119,7 +119,7 @@
                 android:layout_height="14dp"
                 android:layout_marginVertical="4dp"
                 android:layout_marginRight="8dp"
-                android:src="@drawable/icon_online_test"
+                android:src="@drawable/online_test_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -143,7 +143,7 @@
                 android:id="@+id/onlineText_dateIcon"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
-                android:src="@drawable/icon_online_date"
+                android:src="@drawable/date_icon"
                 app:layout_constraintBottom_toBottomOf="@+id/onlineText_dateTitle"
                 app:layout_constraintEnd_toStartOf="@+id/onlineText_dateTitle"
                 app:layout_constraintTop_toTopOf="@+id/onlineText_dateTitle" />
@@ -212,7 +212,7 @@
                     android:id="@+id/scheduleDate_icon"
                     android:layout_width="14dp"
                     android:layout_height="14dp"
-                    android:src="@drawable/icon_online_date"
+                    android:src="@drawable/date_icon"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -257,7 +257,7 @@
                     android:id="@+id/scheduleTime_icon"
                     android:layout_width="14dp"
                     android:layout_height="14dp"
-                    android:src="@drawable/icon_online_test_time"
+                    android:src="@drawable/time_icon"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -303,7 +303,7 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_marginEnd="4dp"
-                    android:src="@drawable/addtocalender"
+                    android:src="@drawable/add_to_calender_icon"
                     app:layout_constraintBottom_toBottomOf="@+id/addToCalenderText"
                     app:layout_constraintEnd_toStartOf="@+id/addToCalenderText"
                     app:layout_constraintTop_toTopOf="@+id/addToCalenderText" />
@@ -378,7 +378,7 @@
                 android:id="@+id/userGuideIcon"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
-                android:src="@drawable/icon_user_guide"
+                android:src="@drawable/user_guide_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -413,7 +413,7 @@
                 android:id="@+id/textInstructionIcon"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
-                android:src="@drawable/icon_test_instruction"
+                android:src="@drawable/test_instruction_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -448,7 +448,7 @@
                 android:id="@+id/sampleTextIcon"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
-                android:src="@drawable/icon_sample_text"
+                android:src="@drawable/sample_test_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -516,7 +516,7 @@
                 android:id="@+id/confirmed_date_icon"
                 android:layout_width="14dp"
                 android:layout_height="14dp"
-                android:src="@drawable/icon_online_date"
+                android:src="@drawable/date_icon"
                 app:layout_constraintBottom_toBottomOf="@+id/confirmed_date_text"
                 app:layout_constraintEnd_toStartOf="@+id/confirmed_date_text"
                 app:layout_constraintTop_toTopOf="@+id/confirmed_date_text" />
