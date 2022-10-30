@@ -14,7 +14,10 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var textView: TextView
+    lateinit var textView2: TextView
+    lateinit var textView3: TextView
+    lateinit var textView4: TextView
+    lateinit var textView5: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,11 +28,26 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        textView = findViewById(R.id.timeLeftText)
-        val text: String = "Time Left for Online Test for Design: 5 Days"
-        val spannableString = SpannableString(text)
+        textView2 = findViewById(R.id.timeLeftText2)
+        textView3 = findViewById(R.id.timeLeftText3)
+        textView4 = findViewById(R.id.timeLeftText4)
+        textView5 = findViewById(R.id.timeLeftText5)
+        val text2= "Online Test for Design"
+        val text3= ": "
+        val text4= "5 "
+        val text5= "Days"
+        val spannableString2 = SpannableString(text2)
+        val spannableString3 = SpannableString(text3)
+        val spannableString4 = SpannableString(text4)
+        val spannableString5 = SpannableString(text5)
         val styleSpan = StyleSpan(Typeface.BOLD)
-        spannableString.setSpan(styleSpan, 14, 44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        textView.setText(spannableString).toString()
+        spannableString2.setSpan(styleSpan, 0, text2.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spannableString3.setSpan(styleSpan, 0, text3.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spannableString4.setSpan(styleSpan, 0, text4.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spannableString5.setSpan(styleSpan, 0, text5.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        textView2.setText(spannableString2).toString()
+        textView3.setText(spannableString3).toString()
+        textView4.setText(spannableString4).toString()
+        textView5.setText(spannableString5).toString()
     }
 }

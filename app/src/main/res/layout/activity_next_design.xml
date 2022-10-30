@@ -20,19 +20,97 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/timeLeftText"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Time Left for Online Test for Design: 00:03:17"
-            android:textAlignment="center"
-            android:textColor="#2E64A4"
-            android:textSize="12sp"
-            android:textStyle="normal"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:lineHeight="14sp" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/timeLeftText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Left for "
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/timeLeftText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online Test for Design"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftTextHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftTextColon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftTextMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftTextColon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/timeLeftTextSeconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17"
+                android:textAlignment="center"
+                android:textColor="#2E64A4"
+                android:textSize="12sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
