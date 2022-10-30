@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/online_text_time_left_backgroud"
+        android:elevation="4dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="13dp"
@@ -55,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:elevation="5dp"
+        android:elevation="2dp"
         android:paddingBottom="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,6 +95,15 @@
             app:layout_constraintTop_toBottomOf="@+id/bdJobsJobName" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<include
+        layout="@layout/include_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/onLineText_constraints"
@@ -204,7 +214,6 @@
                 android:id="@+id/scheduleDateConstraints"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -248,10 +257,9 @@
                 android:id="@+id/scheduleTimeConstraints"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/scheduleDateConstraints"
-                app:layout_constraintEnd_toStartOf="@+id/scheduleAddToCalender"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/scheduleDateConstraints"
-                app:layout_constraintTop_toTopOf="@+id/scheduleDateConstraints">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/scheduleTime_icon"
@@ -290,13 +298,56 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scheduleContactConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/scheduleDateConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/scheduleDateConstraints">
+
+                <ImageView
+                    android:id="@+id/scheduleContact_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/phone_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/scheduleContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Contact No"
+                    android:textColor="#2F64A3"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@+id/scheduleContact_icon"
+                    app:layout_constraintStart_toEndOf="@+id/scheduleContact_icon"
+                    app:layout_constraintTop_toTopOf="@+id/scheduleContact_icon" />
+
+                <TextView
+                    android:id="@+id/scheduleContactEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="+880 16854 46846"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/scheduleContact"
+                    app:layout_constraintTop_toBottomOf="@+id/scheduleContact" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/scheduleAddToCalender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="4dp"
-                app:layout_constraintBottom_toBottomOf="@+id/scheduleTimeConstraints"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/scheduleTimeConstraints">
+                app:layout_constraintStart_toStartOf="@+id/scheduleTimeConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/scheduleTimeConstraints">
 
                 <ImageView
                     android:id="@+id/addToCalenderIcon"
@@ -329,9 +380,11 @@
             android:id="@+id/scheduleReminderConstraints"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
             android:background="@drawable/schedule_reminder_background"
-            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -608,7 +661,7 @@
         android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="13dp"
         android:background="@color/white"
         android:elevation="2dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
