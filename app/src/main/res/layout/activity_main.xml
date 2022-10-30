@@ -21,14 +21,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/timeLeftText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Time Left for Online Test for Design: 5 Days"
             android:textAlignment="center"
             android:textColor="#2E64A4"
             android:textSize="12sp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
