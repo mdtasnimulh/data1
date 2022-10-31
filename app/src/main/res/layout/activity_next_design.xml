@@ -10,7 +10,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/online_text_time_left_backgroud"
+        android:background="@drawable/online_text_time_left_background"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="13dp"

@@ -10,7 +10,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/online_text_time_left_backgroud"
+        android:background="@drawable/online_text_time_left_background"
         android:elevation="4dp"
         android:paddingLeft="16dp"
         android:paddingTop="13dp"
@@ -662,7 +662,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/requestChangedButton"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -704,7 +704,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/online_text_info_backgroud"
+        android:background="@drawable/online_text_info_background"
         android:paddingLeft="8dp"
         android:paddingTop="8dp"
         android:paddingRight="8dp"
